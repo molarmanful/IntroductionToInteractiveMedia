@@ -1,5 +1,5 @@
 // basic params for flies
-int flyNum = 5000; // number of flies
+int flyNum = 1000; // number of flies
 PVector[] flies = new PVector[flyNum]; // array of flies' locations
 int flyD = 5;
 float flySpeed = 5;
