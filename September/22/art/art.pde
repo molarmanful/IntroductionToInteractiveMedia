@@ -27,7 +27,7 @@ void draw(){
 
     // calculate new position of fly using vector math
     // new position will be between fly and decided target
-    flies[i].add(target.sub(flies[i]).normalize().mult(flySpeed));
+    flies[i].add(target.sub(flies[i]).normalize().mult(random(flySpeed / 2, flySpeed * 2)));
 
     // if fly is too close to mouse, then reset the fly's position to somewhere around the border of the screen
     // gives the illusion of endless flies
