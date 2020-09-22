@@ -9,7 +9,7 @@ void setup(){
 
   // initialize array with random vectors/locations
   for(int i = 0; i < flyNum; i++){
-    flies[i] = new PVector(random(width), random(height));
+    flies[i] = rpos();
   }
 }
 
@@ -32,7 +32,8 @@ void draw(){
     // if fly is too close to mouse, then reset the fly's position to somewhere around the border of the screen
     // gives the illusion of endless flies
     if(PVector.dist(mpos(), flies[i]) < flyD * 2){
-      flies[i] = binr() ? new PVector(binr() ? width : 0, random(height)) : new PVector(random(width), binr() ? height : 0);
+      // flies[i] = binr() ? new PVector(binr() ? width : 0, random(height)) : new PVector(random(width), binr() ? height : 0);
+      flies[i] = rpos();
     }
 
     // render fly
@@ -48,4 +49,8 @@ boolean binr(){
 
 PVector mpos(){
   return new PVector(mouseX, mouseY);
+}
+
+PVector rpos(){
+  return new PVector(random(width), random(height));
 }
