@@ -1,3 +1,5 @@
+// DEMO CODE - see chain.js for Markov chain implementation
+
 const fs = require('fs')
 const Chain = require('./chain.js')
 
