@@ -11,3 +11,9 @@ Formula to convert from note (relative to A4) to tone (Hz):
 ```
 2 ^ (n / 12) * 440
 ```
+
+Inputs for "Mary Had a Little Lamb":
+
+```
+dxwxddd xxx dff dxwxddddxxdxw
+```
