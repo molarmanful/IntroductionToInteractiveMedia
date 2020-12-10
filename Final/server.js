@@ -53,7 +53,7 @@ wss.on('connection', ws=>{
           console.log('power decreasing ' + time)
 
           power--
-          updateClient()
+          updateClients()
 
           // down = setInterval(_=>{
           //   if(power > 0){
