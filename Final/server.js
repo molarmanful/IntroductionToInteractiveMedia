@@ -13,8 +13,8 @@ const server = http.createServer(app)
 const wss = new WebSocket.Server({server})
 
 let power = 0
-let cool
-let down
+// let cool
+// let down
 
 app.get('/power', (req, res)=>{
   res.send(power)
@@ -40,25 +40,33 @@ wss.on('connection', ws=>{
       console.log('scratch received')
 
       if(power < 100){
+        console.log('power increasing')
+
         power++
-        clearTimeout(cool)
-        clearInterval(down)
+        // clearTimeout(cool)
+        // clearInterval(down)
 
-        cool = setTimeout(_=>{
-          console.log('power decreasing')
+        let time = 3000 - (wss.clients.size - 1) * 200
+        if(time < 500) time = 500
 
-          down = setInterval(_=>{
-            if(power > 0){
-              power--
-            }
-            else {
-              clearInterval(down)
-              console.log('power at 0')
-            }
-            updateClients()
-          }, 100)
+        setTimeout(_=>{
+          console.log('power decreasing ' + time)
 
-        }, 3000)
+          power--
+          updateClient()
+
+          // down = setInterval(_=>{
+          //   if(power > 0){
+          //     power--
+          //   }
+          //   else {
+          //     clearInterval(down)
+          //     console.log('power at 0')
+          //   }
+          //   updateClients()
+          // }, 100)
+
+        }, time)
 
       }
     }

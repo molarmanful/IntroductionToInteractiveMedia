@@ -12,7 +12,7 @@ boolean busy;
 
 void setup(){
   ws = new WebsocketClient(this, "ws://localhost:3000");
-  port = new Serial(this, Serial.list()[0], 19200);
+  port = new Serial(this, Serial.list()[0], 9600);
   port.bufferUntil('\n');
 
   contacted = false;
