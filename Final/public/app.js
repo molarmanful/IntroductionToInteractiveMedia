@@ -38,6 +38,12 @@ Vue.createApp({
           : this.power >= 50 ? 'med'
           : this.power >= 20 ? 'light'
           : ''
+
+        onkeypress = e=>{
+          if(e.key == ' '){
+            this.scratch()
+          }
+        }
       }
       ws.onclose = _=>{
         console.log('closed')
