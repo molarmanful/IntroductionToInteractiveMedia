@@ -4,6 +4,10 @@
 
 ![](media/harnessfront.jpg)
 
+## Video
+
+TO BE ADDED (Unfortunately forgot to record footage of the experience, am working on that)
+
 ## Context
 
 I was inspired by a part of [this wonderful invention](https://spongebob.fandom.com/wiki/Automatic_Back_Scratcher,_Hair_Comber,_Nose_Picker,_and_Ukulele_Tuner_9000); however, I wanted my backscratcher to be powered by the Internet. I figured that since I was rather lazy, it would be nice to have my friends scratch my back over the Internet for me. To incentivize these friends and prevent them from slacking off, I decided that I would turn their portion of the backscratching job into a collaborative minigame to retain their engagement in the activity.
