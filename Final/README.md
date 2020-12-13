@@ -14,7 +14,7 @@ I was inspired by a part of [this wonderful invention](https://spongebob.fandom.
 
 ## Objective
 
-For the people whose job is to scratch my back remotely, they will be placed in front of a website. Their goal with this website is to click on the button in the center of the screen as fast as possible to increase the power level. The power level increases based on the speed of the clicks; as each person increases their 
+For the people whose job is to scratch my back remotely, they will be placed in front of a website. Their goal with this website is to click on the button in the center of the screen as fast as possible to increase the power level. The power level increases based on the speed of the clicks; more people means more participation required from each person to get the power level to the maximum (at 100).
 
 ## Process
 
